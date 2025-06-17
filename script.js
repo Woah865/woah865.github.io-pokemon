@@ -1,5 +1,4 @@
 const themeToggle = document.getElementById('theme-toggle');
-const searchBar = document.getElementById('search-bar');
 const filters = document.querySelectorAll('.filter-btn');
 const pokedexContainer = document.getElementById('pokedex-container');
 const pokemonModal = document.getElementById('pokemon-modal');
@@ -54,34 +53,8 @@ const openPokemonModal = async (pokemon) => {
     <li>HP: ${pokemon.stats.find(stat => stat.stat.name === 'hp').base_stat}</li>
     <li>Attack: ${pokemon.stats.find(stat => stat.stat.name === 'attack').base_stat}</li>
     <li>Defense: ${pokemon.stats.find(stat => stat.stat.name === 'defense').base_stat}</li>
-    <li>Speed: ${pokemon.stats.find(stat => stat.stat.name === 'speed').base_stat}</li>
-  `;
-  pokemonAbilities.innerHTML = pokemon.abilities.map(ability => `<li>${ability.ability.name}</li>`).join('');
-  pokemonEvolution.textContent = `Evolves from ${evoData.chain.species.name}`;
-  pokemonModal.style.display = 'block';
-};
+    <li>Speed: ${pokemon.stats
+::contentReference[oaicite:13]{index=13}
+ 
 
-const closePokemonModal = () => {
-  pokemonModal.style.display = 'none';
-};
-
-const toggleTheme = () => {
-  const currentTheme = document.body.getAttribute('data-theme');
-  document.body.setAttribute('data-theme', currentTheme === 'dark' ? 'light' : 'dark');
-};
-
-const filterPokemonByCategory = (category) => {
-  // Implement filtering logic based on category
-  // For example:
-  // if (category === 'starter') {
-  //   filteredPokemon = allPokemon.filter(pokemon => pokemon.isStarter);
-  // }
-  renderPokemonCards(filteredPokemon);
-};
-
-const searchPokemon = () => {
-  const query = searchBar.value.toLowerCase();
-  filteredPokemon = allPokemon.filter(pokemon => pokemon.name.toLowerCase().includes(query));
-  render
-::contentReference[oaicite:10]{index=10}
  
