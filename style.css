@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ef5350;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  max-width: 1200px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+img {
+  width: 64px;
+  height: 64px;
+}
+
+.type {
+  display: inline-block;
+  padding: 3px 8px;
+  margin: 2px;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.9em;
+}
+
+/* Type Colors */
+.type-normal    { background-color: #A8A77A; }
+.type-fire      { background-color: #EE8130; }
+.type-water     { background-color: #6390F0; }
+.type-electric  { background-color: #F7D02C; }
+.type-grass     { background-color: #7AC74C; }
+.type-ice       { background-color: #96D9D6; }
+.type-fighting  { background-color: #C22E28; }
+.type-poison    { background-color: #A33EA1; }
+.type-ground    { background-color: #E2BF65; }
+.type-flying    { background-color: #A98FF3; }
+.type-psychic   { background-color: #F95587; }
+.type-bug       { background-color: #A6B91A; }
+.type-rock      { background-color: #B6A136; }
+.type-ghost     { background-color: #735797; }
+.type-dragon    { background-color: #6F35FC; }
+.type-dark      { background-color: #705746; }
+.type-steel     { background-color: #B7B7CE; }
+.type-fairy     { background-color: #D685AD; }
