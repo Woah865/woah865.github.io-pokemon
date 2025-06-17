@@ -10,35 +10,36 @@
   <header>
     <h1>Pokédex Explorer</h1>
     <button id="theme-toggle">🌙 Dark Mode</button>
-    <input type="text" id="search-bar" placeholder="Search Pokémon...">
   </header>
 
   <main>
     <div id="filters">
+      <button class="filter-btn" data-type="normal">Normal</button>
+      <button class="filter-btn" data-type="fire">Fire</button>
+      <button class="filter-btn" data-type="water">Water</button>
+      <button class="filter-btn" data-type="electric">Electric</button>
+      <button class="filter-btn" data-type="grass">Grass</button>
+      <button class="filter-btn" data-type="ice">Ice</button>
+      <button class="filter-btn" data-type="fighting">Fighting</button>
+      <button class="filter-btn" data-type="poison">Poison</button>
+      <button class="filter-btn" data-type="ground">Ground</button>
+      <button class="filter-btn" data-type="flying">Flying</button>
+      <button class="filter-btn" data-type="psychic">Psychic</button>
+      <button class="filter-btn" data-type="bug">Bug</button>
+      <button class="filter-btn" data-type="rock">Rock</button>
+      <button class="filter-btn" data-type="ghost">Ghost</button>
+      <button class="filter-btn" data-type="dragon">Dragon</button>
+      <button class="filter-btn" data-type="dark">Dark</button>
+      <button class="filter-btn" data-type="steel">Steel</button>
+      <button class="filter-btn" data-type="fairy">Fairy</button>
       <button class="filter-btn" data-category="starter">Starter</button>
       <button class="filter-btn" data-category="legendary">Legendary</button>
       <button class="filter-btn" data-category="base">Base Form</button>
       <button class="filter-btn" data-category="final-evo">Final Evolution</button>
-      <button class="filter-btn" data-type="fire">Fire</button>
-      <button class="filter-btn" data-type="water">Water</button>
-      <button class="filter-btn" data-type="grass">Grass</button>
-      <button class="filter-btn" data-type="electric">Electric</button>
-      <button class="filter-btn" data-type="normal">Normal</button>
-      <button class="filter-btn" data-type="steel">Steel</button>
-      <button class="filter-btn" data-type="psychic">Psychic</button>
-      <button class="filter-btn" data-type="rock">Rock</button>
-      <button class="filter-btn" data-type="ground">Ground</button>
-      <button class="filter-btn" data-type="ice">Ice</button>
-      <button class="filter-btn" data-type="fairy">Fairy</button>
-      <button class="filter-btn" data-type="poison">Poison</button>
-      <button class="filter-btn" data-type="ghost">Ghost</button>
-      <button class="filter-btn" data-type="flying">Flying</button>
-      <button class="filter-btn" data-type="bug">Bug</button>
-      <button class="filter-btn" data-type="fighting">Fighting</button>
     </div>
 
     <div id="pokedex-container">
-      <!-- Pokémon data will be loaded here -->
+      <!-- Pokémon cards will be dynamically inserted here -->
     </div>
   </main>
 
