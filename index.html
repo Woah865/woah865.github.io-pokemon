@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pokédex Explorer</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Pokédex Explorer</h1>
+    <button id="theme-toggle">🌙 Dark Mode</button>
+    <input type="text" id="search-bar" placeholder="Search Pokémon...">
   </header>
 
   <main>
-    <table id="pokedex-table">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Sprite</th>
-          <th>Name</th>
-          <th>Types</th>
-          <th>HP</th>
-          <th>Attack</th>
-          <th>Defense</th>
-          <th>Sp. Atk</th>
-          <th>Sp. Def</th>
-          <th>Speed</th>
-        </tr>
-      </thead>
-      <tbody id="pokedex-body">
-        <!-- Pokémon data will be inserted here -->
-      </tbody>
-    </table>
+    <div id="filters">
+      <button class="filter-btn" data-type="fire">Fire</button>
+      <button class="filter-btn" data-type="water">Water</button>
+      <button class="filter-btn" data-type="grass">Grass</button>
+      <button class="filter-btn" data-type="electric">Electric</button>
+      <button class="filter-btn" data-type="normal">Normal</button>
+      <button class="filter-btn" data-type="steel">Steel</button>
+       <button class="filter-btn" data-type="psychic">Psychic</button>
+      <button class="filter-btn" data-type="rock">Rock</button>
+      <button class="filter-btn" data-type="ground">Ground</button>
+      <button class="filter-btn" data-type="ice">Ice</button>
+      <button class="filter-btn" data-type="fairy">Fairy</button>
+      <button class="filter-btn" data-type="poison">Poison</button>
+      <button class="filter-btn" data-type="ghost">Ghost</button>
+      <button class="filter-btn" data-type="flying">Flying</button>
+      <button class="filter-btn" data-type="bug">Bug</button>
+      <button class="filter-btn" data-type="fighting">Fighting</button>
+    </div>
+
+    <div id="pokedex-container">
+      <!-- Pokémon data will be loaded here -->
+    </div>
   </main>
+
+  <div id="pokemon-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal" class="close-btn">&times;</span>
+      <h2 id="pokemon-name"></h2>
+      <img id="pokemon-image" src="" alt="">
+      <p id="pokemon-description"></p>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
